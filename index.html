@@ -4,20 +4,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RACPO</title>
+  <title>SM</title>
   <meta name="description" content="A list of links to my art works.">
   <style>
     body {
-      background: url('static/pexels-philippedonn-1169754.jpg') no-repeat center center fixed;
-      background-size: cover;
+      position: relative;
+      background: rgb(2, 0, 36);
+      background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(9, 64, 121, 1) 35%, rgba(0, 163, 196, 1) 100%);
       color: #ffffff;
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      min-height: 100vh;
       margin: 0;
       font-family: Arial, sans-serif;
       text-shadow: 2px 2px 4px #000000;
+    }
+
+    .moon {
+      position: absolute;
+      height: 500px;
+      top: -20px;
+      right: 0px;
     }
 
     .container {
@@ -25,6 +33,7 @@
       background-color: rgba(0, 0, 0, 0.7);
       padding: 40px;
       border-radius: 10px;
+      opacity: 80%;
     }
 
     h1 {
@@ -42,16 +51,27 @@
     a:hover {
       text-decoration: underline;
     }
+
+    .waves {
+      position: absolute;
+      opacity: 50%;
+      height: 50%;
+      width: 100%;
+      bottom: 0;
+      margin: 0;
+    }
   </style>
 </head>
 
 <body>
+  <img src="static/pngwing.png" class="moon" alt="Moon">
   <div class="container">
-    <h1>Art Works</h1>
+    <h1>Sarah Michelle</h1>
     <a href="works/hidden_halves.html">Hidden Halves</a>
     <a href="works/another_note.html">Another Note</a>
     <a href="works/escape.html">Escape</a>
   </div>
+  <img src="static/rb_37268.png" class="waves" alt="Waves">
 </body>
 
 </html>
