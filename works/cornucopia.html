@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cornucopia</title>
+
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    .frame {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #FFED99;
+      height: 600px;
+      width: 800px;
+    }
+
+    .container {
+      position: relative;
+      height: 300px;
+      width: 480px;
+      background: transparent;
+    }
+
+    .container div {
+      position: absolute;
+    }
+
+    .right {
+      background: #3F8627;
+      right: 0;
+      border-bottom-right-radius: 100%;
+      height: 300px;
+      width: 300px;
+    }
+
+    .left-bottom {
+      bottom: 0;
+      height: 180px;
+      width: 180px;
+      border-bottom-left-radius: 100%;
+      background: #9F3333;
+    }
+
+    .top-left {
+      background: #F48B26;
+      height: 120px;
+      width: 120px;
+      border-top-left-radius: 100%;
+    }
+
+    .top-left-top {
+      left: 120px;
+      background: #F48B26;
+      height: 60px;
+      width: 60px;
+      border-top-right-radius: 100%;
+    }
+
+    .top-left-bottom {
+      left: 130px;
+      top: 60px;
+      background: #000000;
+      height: 50px;
+      width: 50px;
+      border-bottom-right-radius: 100%;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="frame">
+    <div class="container">
+      <div class="right"></div>
+      <div class="left-bottom"></div>
+      <div class="top-left"></div>
+      <div class="top-left-top"></div>
+      <div class="top-left-bottom"></div>
+    </div>
+  </div>
+</body>
+
+</html>
